@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Long Branch Farms — Pasture-raised beef and pork grown naturally in Grayson County, Kentucky. No antibiotics. No vaccines. Just real food from people who care." />
+  <meta name="description" content="Long Branch Farms, Pasture-raised beef and pork grown naturally in Grayson County, Kentucky. No antibiotics. No vaccines. Just real food from people who care." />
   <title>Long Branch Farms | Grayson County, KY</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,73 +47,6 @@
     }
 
     ::selection { background: var(--hay); color: var(--soil); }
-
-    /* ── WATERMARK ─────────────────────────────────────────────── */
-    .watermark {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      z-index: 9999;
-      pointer-events: none;
-      user-select: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .watermark::before {
-      content: 'PREVIEW BY CASEY KEOWN';
-      font-family: var(--sans);
-      font-weight: 500;
-      font-size: clamp(1.4rem, 4vw, 2.8rem);
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: rgba(196, 164, 90, 0.18);
-      white-space: nowrap;
-      transform: rotate(-30deg);
-      display: block;
-      width: 200%;
-      text-align: center;
-      text-shadow: 0 0 0 transparent;
-      /* repeat diagonally */
-      background: repeating-linear-gradient(
-        -30deg,
-        transparent 0px,
-        transparent 180px,
-        rgba(196,164,90,0.13) 180px,
-        rgba(196,164,90,0.13) 182px
-      );
-      padding: 6rem 0;
-      line-height: 8;
-    }
-    /* second pass for denser coverage */
-    .watermark-text {
-      position: fixed;
-      top: 0; left: -50%; right: 0; bottom: 0;
-      z-index: 9999;
-      pointer-events: none;
-      user-select: none;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      gap: 0;
-      transform: rotate(-30deg);
-      transform-origin: center;
-      width: 200%;
-      height: 200%;
-      top: -50%;
-    }
-    .watermark-text span {
-      font-family: var(--sans);
-      font-weight: 500;
-      font-size: clamp(0.7rem, 1.6vw, 1.1rem);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(196, 164, 90, 0.22);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      white-space: nowrap;
-    }
 
     /* ── REVEAL ────────────────────────────────────────────────── */
     .reveal {
@@ -203,7 +136,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-24-background.jpeg');
+      background-image: url('/assets/photo-24-background.jpeg');
       background-size: cover;
       background-position: center 30%;
       transform: scale(1.04);
@@ -743,7 +676,7 @@
     .cta-bg {
       position: absolute;
       inset: 0;
-      background-image: url('https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-6.jpeg');
+      background-image: url('/assets/photo-6.jpeg');
       background-size: cover;
       background-position: center;
     }
@@ -904,21 +837,10 @@
 
 <body>
 
-  <!-- Watermark -->
-<div class="watermark" aria-hidden="true"></div>
-<div class="watermark-text" aria-hidden="true">
-  <span>CASEY KEOWN</span><span>Custom Web Architecture</span><span>CASEY KEOWN</span>
-  <span>Custom Web Architecture</span><span>CASEY KEOWN</span><span>Custom Web Architecture</span>
-  <span>CASEY KEOWN</span><span>Custom Web Architecture</span><span>CASEY KEOWN</span>
-  <span>Custom Web Architecture</span><span>Custom Web Architecture</span><span>Custom Web Architecture</span>
-  <span>Custom Web Architecture</span><span>Custom Web Architecture</span><span>Custom Web Architecture</span>
-  <span>Custom Web Architecture</span><span>Custom Web Architecture</span><span>Custom Web Architecture</span>
-</div>
-
   <!-- Header -->
   <header id="site-header">
     <a href="#hero" class="logo-wrap">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/3c0c149bf25053ad623e8ba0eb1e99983370ce5a/images/LBF-logo-transparent.png" alt="Long Branch Farms Logo" />
+      <img src="/assets/LBF-logo-transparent.png" alt="Long Branch Farms Logo" />
       <span class="logo-name">
         Long Branch Farms
         <small>Grayson County, KY</small>
@@ -942,7 +864,7 @@
         Eat local.<br /><em>Trust your food.</em><br />Love the taste.
       </h1>
       <p class="hero-sub reveal" style="transition-delay:.2s">
-        Pasture-raised beef and pork grown without antibiotics, vaccines, or shortcuts — by a family that feeds their animals the same care they put into every order.
+        Pasture-raised beef and pork grown without antibiotics, vaccines, or shortcuts, by a family that gives every animal the same care they put into every order.
       </p>
       <div class="hero-ctas reveal" style="transition-delay:.3s">
         <a href="store.html" class="btn-primary">Shop Our Cuts</a>
@@ -956,7 +878,7 @@
     <div class="badges-inner">
       <span class="badge-item">
         <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        No Antibiotics — Ever
+        No Antibiotics, Ever
       </span>
       <span class="badge-item">
         <svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -986,10 +908,10 @@
     <div class="story-inner">
       <div class="story-images reveal">
         <img class="story-img-main"
-          src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-3.jpeg"
+          src="/assets/photo-3.jpeg"
           alt="Long Branch Farms animals on pasture" />
         <img class="story-img-accent"
-          src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-7.jpeg"
+          src="/assets/photo-7.jpeg"
           alt="Farm life at Long Branch Farms" />
         <span class="story-img-tag">Est. 2022</span>
       </div>
@@ -1019,7 +941,7 @@
           </div>
           <div class="pillar">
             <p class="pillar-title">No Additives</p>
-            <p>Zero antibiotics, zero vaccines, zero hormones — at any stage.</p>
+            <p>Zero antibiotics, zero vaccines, zero hormones, at any stage.</p>
           </div>
         </div>
       </div>
@@ -1029,16 +951,16 @@
   <!-- Photo Strip -->
   <div class="photo-strip">
     <div class="photo-strip-item">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-1.jpeg" alt="Farm photo" loading="lazy" />
+      <img src="/assets/photo-1.jpeg" alt="Farm photo" loading="lazy" />
     </div>
     <div class="photo-strip-item">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-8.jpeg" alt="Farm photo" loading="lazy" />
+      <img src="/assets/photo-8.jpeg" alt="Farm photo" loading="lazy" />
     </div>
     <div class="photo-strip-item">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-12.jpeg" alt="Farm photo" loading="lazy" />
+      <img src="/assets/photo-12.jpeg" alt="Farm photo" loading="lazy" />
     </div>
     <div class="photo-strip-item">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-15.jpeg" alt="Farm photo" loading="lazy" />
+      <img src="/assets/photo-15.jpeg" alt="Farm photo" loading="lazy" />
     </div>
   </div>
 
@@ -1048,7 +970,7 @@
       <p class="section-label reveal" style="color:var(--hay)">From Our Farm</p>
       <h2 class="products-heading reveal" style="transition-delay:.08s">What we raise &amp; sell</h2>
       <p class="products-sub reveal" style="transition-delay:.12s">
-        Every cut comes from animals raised on our farm. Availability is seasonal — sign up to be notified when new inventory drops.
+        Every cut comes from animals raised on our farm. Availability is seasonal, so check the store for current inventory.
       </p>
 
       <div class="product-tabs reveal" style="transition-delay:.16s">
@@ -1067,8 +989,50 @@
         </div>
         <div class="product-card">
           <div>
+            <p class="product-name">Sirloin</p>
+            <p class="product-note">Grass-finished, versatile, and full of flavor.</p>
+          </div>
+          <p class="product-price">$15 / lb</p>
+        </div>
+        <div class="product-card">
+          <div>
+            <p class="product-name">New York Strip</p>
+            <p class="product-note">Grass-finished with a tender bite and bold beef flavor.</p>
+          </div>
+          <p class="product-price">$18 / lb</p>
+        </div>
+        <div class="product-card">
+          <div>
+            <p class="product-name">Short Ribs</p>
+            <p class="product-note">Rich, meaty ribs ideal for low and slow cooking.</p>
+          </div>
+          <p class="product-price">$11 / lb</p>
+        </div>
+        <div class="product-card">
+          <div>
+            <p class="product-name">Chuck Roast</p>
+            <p class="product-note">A hearty roast made for braising or the slow cooker.</p>
+          </div>
+          <p class="product-price">$10 / lb</p>
+        </div>
+        <div class="product-card">
+          <div>
+            <p class="product-name">Sirloin Tip Roast</p>
+            <p class="product-note">Lean, tender, and perfect for a family meal.</p>
+          </div>
+          <p class="product-price">$10 / lb</p>
+        </div>
+        <div class="product-card">
+          <div>
+            <p class="product-name">Shoulder Roast</p>
+            <p class="product-note">Deep flavor and a tender finish when cooked slowly.</p>
+          </div>
+          <p class="product-price">$10 / lb</p>
+        </div>
+        <div class="product-card">
+          <div>
             <p class="product-name">T-Bone</p>
-            <p class="product-note">Grass-finished. Two cuts in one — strip and tenderloin.</p>
+            <p class="product-note">Grass-finished. Two cuts in one: strip and tenderloin.</p>
           </div>
           <p class="product-price">$18 / lb</p>
         </div>
@@ -1092,7 +1056,7 @@
         <div class="product-card">
           <div>
             <p class="product-name">Bacon</p>
-            <p class="product-note">Pasture-raised, no nitrates or additives.</p>
+            <p class="product-note">Pasture-raised with no nitrates or additives. Currently sold out.</p>
           </div>
           <p class="product-price">$8 / lb</p>
         </div>
@@ -1165,14 +1129,21 @@
         <div class="product-card">
           <div>
             <p class="product-name">Pork Bundle Box</p>
-            <p class="product-note">10 lbs of our best cuts. Delivery included.</p>
+            <p class="product-note">10 lbs of our best pork cuts. Choose pickup or local delivery.</p>
           </div>
-          <p class="product-price">$80</p>
+          <p class="product-price">$70 pickup / $80 delivery</p>
+        </div>
+        <div class="product-card">
+          <div>
+            <p class="product-name">Ground Beef Bundle</p>
+            <p class="product-note">5 lbs of ground beef. Choose pickup or local delivery.</p>
+          </div>
+          <p class="product-price">$40 pickup / $50 delivery</p>
         </div>
         <div class="product-card">
           <div>
             <p class="product-name">Breakfast Bundle Box</p>
-            <p class="product-note">Bacon, sausage, ham steak — everything for the best morning.</p>
+            <p class="product-note">Bacon, sausage, and ham steak, everything for the best morning.</p>
           </div>
           <p class="product-price">$35</p>
         </div>
@@ -1187,7 +1158,7 @@
 
       <div class="products-cta-row reveal">
         <a href="store.html" class="btn-primary">View Full Store</a>
-        <p class="products-note">Inventory updates in real time. Low stock moves fast.</p>
+        <p class="products-note">Local delivery is available within about 45 miles. Contact us for requests outside the area.</p>
       </div>
     </div>
   </section>
@@ -1195,19 +1166,19 @@
   <!-- Feature Photo Grid -->
   <div class="feature-grid">
     <div class="fg-item fg-item-tall">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-2.jpeg" alt="Farm animals" loading="lazy" />
+      <img src="/assets/photo-2.jpeg" alt="Farm animals" loading="lazy" />
       <span class="fg-caption">Pasture Life</span>
     </div>
     <div class="fg-item fg-item-wide fg-item-sm">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-9.jpeg" alt="Farm scenery" loading="lazy" />
+      <img src="/assets/photo-9.jpeg" alt="Farm scenery" loading="lazy" />
       <span class="fg-caption">Long Branch Land</span>
     </div>
     <div class="fg-item fg-item-sm">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-11.jpeg" alt="Farm animals" loading="lazy" />
+      <img src="/assets/photo-11.jpeg" alt="Farm animals" loading="lazy" />
       <span class="fg-caption">Raised Naturally</span>
     </div>
     <div class="fg-item fg-item-sm">
-      <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-13.jpeg" alt="Farm life" loading="lazy" />
+      <img src="/assets/photo-13.jpeg" alt="Farm life" loading="lazy" />
       <span class="fg-caption">Every Day</span>
     </div>
   </div>
@@ -1221,10 +1192,10 @@
           Raised as <em>naturally<br />as possible.</em> Period.
         </h2>
         <p class="reveal" style="transition-delay:.12s">
-          We don't cut corners because we can't — we're the ones eating this food too. Everything we raise goes through the same standard: if we wouldn't feed it to our own family, it doesn't leave this farm.
+          We don't cut corners because we can't, we're the ones eating this food too. Everything we raise goes through the same standard: if we wouldn't feed it to our own family, it doesn't leave this farm.
         </p>
         <p class="reveal" style="transition-delay:.16s">
-          Our pigs run in woods and open pasture. Their feed is mixed by us every single day. Our beef grazes on grass from start to finish. These aren't marketing claims — they're just how we farm.
+          Our pigs run in woods and open pasture. Their feed is mixed by us every single day. Our beef grazes on grass from start to finish. These aren't marketing claims, they're just how we farm.
         </p>
         <ul class="promise-list reveal" style="transition-delay:.2s">
           <li>No antibiotics</li>
@@ -1238,7 +1209,7 @@
         </ul>
       </div>
       <div class="promise-image reveal" style="transition-delay:.1s">
-        <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/main/images/photo-5.jpeg" alt="Long Branch Farms animals on pasture" loading="lazy" />
+        <img src="/assets/photo-5.jpeg" alt="Long Branch Farms animals on pasture" loading="lazy" />
         <span class="promise-image-tag">Naturally Raised</span>
       </div>
     </div>
@@ -1248,9 +1219,9 @@
   <div class="quote-band">
     <span class="quote-mark reveal">&ldquo;</span>
     <p class="quote-text reveal" style="transition-delay:.08s">
-      We want to provide the healthiest, best tasting food to our locals — people who know what they're being fed and how it was cared for.
+      We want to provide the healthiest, best tasting food to our locals, people who know what they're being fed and how it was cared for.
     </p>
-    <p class="quote-attr reveal" style="transition-delay:.14s">— Courtney Decker, Long Branch Farms</p>
+    <p class="quote-attr reveal" style="transition-delay:.14s">Courtney Decker, Long Branch Farms</p>
   </div>
 
   <!-- CTA -->
@@ -1259,7 +1230,7 @@
     <div class="cta-overlay"></div>
     <div class="cta-content">
       <h2 class="reveal">Ready to fill your <em>freezer</em><br />the right way?</h2>
-      <p class="reveal" style="transition-delay:.1s">Bulk orders, bundle boxes, and individual cuts available. Inventory is limited and moves fast — check the store for current availability.</p>
+      <p class="reveal" style="transition-delay:.1s">Bulk orders, bundle boxes, and individual cuts are available for pickup, an arranged meeting, or eligible local delivery. Contact us if you are outside the delivery area.</p>
       <div class="cta-btns reveal" style="transition-delay:.18s">
         <a href="store.html" class="btn-primary">Shop Now</a>
         <a href="contact.html" class="btn-ghost">Ask a Question</a>
@@ -1272,7 +1243,7 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="https://raw.githubusercontent.com/caseykeown/longbranch-farms/3c0c149bf25053ad623e8ba0eb1e99983370ce5a/images/LBF-logo-transparent.png" alt="Long Branch Farms" />
+          <img src="/assets/LBF-logo-transparent.png" alt="Long Branch Farms" />
           <p>Pasture-raised beef and pork grown naturally in Grayson County, Kentucky by a family that cares about what's on your table.</p>
         </div>
         <div class="footer-col">
